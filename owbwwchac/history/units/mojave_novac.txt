@@ -1,0 +1,31 @@
+add_namespace = nf_techlevel
+
+country_event = {
+	id = nf_techlevel.1
+	title = nf_techlevel.1.t
+	desc = nf_techlevel.1.d
+	
+	trigger = {
+		if = {
+			limit = {
+				any_country = {
+					has_technology = {
+					#techs go here
+						
+					}
+					NOT = {
+						has_technology = settled_civilization
+					}
+				}
+				
+			}
+		}
+	}
+	
+	option = {
+		name = nf_techlevel.1.a
+		set_technology = {
+			settled_civilization = 1
+		}
+	}
+}

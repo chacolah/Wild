@@ -1,0 +1,107 @@
+ideas = {
+	country = {
+		mojave_goodsprings_accepted = {
+			picture = mojave
+			allowed = {
+			
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		mojave_goodsprings_liked = {
+			picture = mojave
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		mojave_goodsprings_idolised = {
+			picture = mojave
+			allowed = {
+			
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.04
+			}
+		}
+		mojave_primm_accepted = {
+			picture = mojave
+			allowed = {
+				
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		mojave_primm_liked = {
+			picture = mojave
+			allowed = {
+			
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		mojave_primm_idolised = {
+			picture = mojave
+			allowed = {
+			
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.04
+			}
+		}
+		mojave_novac_accepted = {
+			picture = mojave
+			allowed = {
+			
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		mojave_novac_liked = {
+			picture = mojave
+			allowed = {
+			
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		mojave_novac_idolised = {
+			picture = mojave
+			allowed = {
+			
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.04
+			}
+		}
+		mojave_ncr_support = {
+			picture = {
+				
+			}
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				conscription = 0.03
+			}
+		}
+	}
+	
+}

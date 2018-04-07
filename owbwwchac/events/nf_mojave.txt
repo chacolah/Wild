@@ -1,0 +1,266 @@
+﻿add_namespace = nf_mojave
+country_event = {
+	id = nf_mojave.1
+	title = nf_mojave.1.t
+	desc = nf_mojave.1.d
+	
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_mojave.1.a
+		add_stability = 0.1
+        
+	}
+	
+	option = {
+		name = nf_mojave.1.b
+		add_stability = -0.05
+		add_manpower = 300
+		
+	}
+	option = {
+		name = nf_mojave.1.c
+		add_stability = 0.15
+		SCR = {
+			load_oob = mojave_exiles
+		}
+		
+	}
+}
+country_event = {
+	id = nf_mojave.2
+	title = nf_mojave.2.t
+	desc = nf_mojave.2.d
+	
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_mojave.2.a 
+        hidden_effect = {
+			set_country_flag = goodsprings
+		}
+		add_ideas = mojave_goodsprings_accepted
+	}
+	
+	option = {
+		name = nf_mojave.2.b
+		set_capital = 419
+		hidden_effect = {
+			set_country_flag = primm
+		}
+		add_ideas = mojave_primm_accepted
+	}
+	option = {
+		name = nf_mojave.2.c
+		set_capital = 181
+		hidden_effect = {
+			set_country_flag = novac
+		}
+		add_ideas = mojave_novac_accepted
+	}
+}
+country_event = {
+	id = nf_mojave.3
+	title = nf_mojave.3.t
+	desc = nf_mojave.3.d
+	
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_mojave.3.a 
+        set_political_party = {
+			ideology = people
+			popularity = 60
+		}
+		set_politics = {
+			ruling_party = people
+			elections_allowed = no
+		}
+		if = {
+			limit = {
+				has_idea = mojave_goodsprings_accepted
+			}
+			swap_ideas = {
+				remove_idea = mojave_goodsprings_accepted
+				add_idea = mojave_goodsprings_liked
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = mojave_goodsprings_accepted
+				}
+			}
+			add_ideas = mojave_goodsprings_accepted
+		}
+	}
+	
+	option = {
+		name = nf_mojave.3.b
+		set_political_party = {
+			ideology = intellectuals
+			popularity = 60
+		}
+		set_politics = {
+			ruling_party = intellectuals
+			elections_allowed = no
+		}
+		if = {
+			limit = {
+				has_idea = mojave_primm_accepted
+			}
+			swap_ideas = {
+				remove_idea = mojave_primm_accepted
+				add_idea = mojave_primm_liked
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = mojave_primm_accepted
+				}
+			}
+			add_ideas = mojave_primm_accepted
+		}
+	}
+	option = {
+		name = nf_mojave.3.c
+		set_political_party = {
+			ideology = ruler
+			popularity = 60
+		}
+		set_politics = {
+			ruling_party = ruler
+			elections_allowed = no
+		}
+		if = {
+			limit = {
+				has_idea = mojave_novac_accepted
+			}
+			swap_ideas = {
+				remove_idea = mojave_novac_accepted
+				add_idea = mojave_novac_liked
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = mojave_novac_accepted
+				}
+			}
+			add_ideas = mojave_novac_accepted
+		}
+	}
+}
+
+country_event = {
+	id = nf_mojave.5
+	title = nf_mojave.5.t 
+	desc = nf_mojave.5.d 
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		NEW = {
+			has_idea = platinum_os
+		}
+	}
+	option = {
+		name = nf_mojave.5.a 
+		hidden_effect = {
+			HOP = {
+				set_country_flag = courier
+			}
+			if = {
+				limit = {
+					HOP = {
+						exists = no
+					}
+				}
+				set_country_flag = courier
+			}
+		}
+	}
+}
+country_event = {
+	id = nf_mojave.6
+	title = nf_mojave.6.t 
+	desc = nf_mojave.6.d 
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		TWI = {
+			exists = no
+		}
+	}
+	option = {
+		name = nf_mojave.6.a 
+		hidden_effect = {
+			ASH = {
+				set_country_flag = ulysses
+			}
+			if = {
+				limit = {
+					ASH = {
+						exists = no
+					}
+				}
+				set_country_flag = ulysses
+			}
+		}
+	}
+}
+country_event = {
+	id = nf_mojave.7
+	title = nf_mojave.7.t 
+	desc = nf_mojave.7.d 
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		MRA = {
+			exists = yes
+		}
+		MRA = {
+			exists = yes
+			controls_state = 419
+		}
+	}
+	option = {
+		name = nf_mojave.7.a
+		MRA = {
+		
+			hidden_effect = {
+				load_oob = mojave_primm
+			}
+			add_state_core = 419
+		}
+	}
+}
+country_event = {
+	id = mf_mojave.8
+	title = nf_mojave.8.t 
+	desc = nf_mojave.8.d 
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		MRA = {
+			exists = yes
+		}
+		MRA = {
+			exists = yes
+			controls_state = 181
+		}
+	}
+	option = {
+		name = nf_mojave.8.a
+		MRA = {
+			hidden_effect = {
+				load_oob = mojave_novac
+			}
+			add_state_core = 181
+		}
+	}
+}
+
+	

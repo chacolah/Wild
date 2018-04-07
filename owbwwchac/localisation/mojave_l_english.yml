@@ -1,0 +1,187 @@
+﻿l_english:
+ nf_mojave.1.t:0 "What to do with the Raiders."
+ nf_mojave.1.d:0 "We've won against the raiders, and we have whats left of them and their ilk at our mercy. What should we do?"
+ nf_mojave.1.a:0 "Execute Them."
+ nf_mojave.1.b:0 "Allow Them to Stay."
+ nf_mojave.1.c:0 "Exile them from our lands."
+ 
+ nf_mojave.2.t:0 "Where should we lead from?"
+ nf_mojave.2.d:0 "Now that we have rallied under a unified Mojave, Which town should we consider our capital?"
+ nf_mojave.2.a:0 "Goodsprings."
+ nf_mojave.2.b:0 "Primm."
+ nf_mojave.2.c:0 "Novac."
+ 
+ nf_mojave.3.t:0 "Leader of the Mojave"
+ nf_mojave.3.d:0 "We've rid ourselves of the raider plague, sealed their fate, and chose a proper capital. The next thing to do is to choose who shall lead us."
+ nf_mojave.3.a:0 "Trudy, from Goodsprings."
+ nf_mojave.3.b:0 "Sheriff Mcbain, from Primm."
+ nf_mojave.3.c:0 "Jeannie May Crawford, From Novac."
+ 
+ 
+ mojave_raiders_came:0 "Decide Raiders' fate"
+ mojave_raiders_came_desc:0 ""
+ 
+ mojave_capital:0 "Choose a Capital"
+ mojave_capital_desc:0 ""
+ 
+ mojave_leader:0 "Who Leads?"
+ mojave_leader_desc:0 ""
+ 
+ mojave_goodsprings:0 "Renovate Goodsprings"
+ mojave_goodsprings_desc:0 ""
+ 
+ mojave_goodsprings_source:0 "Clear out the Geckos"
+ mojave_goodsprings_source_desc:0 ""
+ 
+ mojave_restoring_school:0 "Rebuild the Schoolhouse"
+ mojave_restoring_school_desc:0 ""
+ 
+ mojave_prospector:0 "The Prospector Saloon"
+ mojave_prospector_desc:0 ""
+ 
+ mojave_ncr:0 "Joining the Republic"
+ mojave_ncr:0 ""
+ 
+ mojave_primm:0 "Renovate Primm"
+ mojave_primm_desc:0 ""
+ 
+ mojave_express:0 "Courier Contracts"
+ mojave_express_desc:0 ""
+ 
+ mojave_primm_casino:0 "The Dueling Casino"
+ mojave_primm_casino_desc:0 ""
+ 
+ mojave_sheriff:0 "Get a New Sheriff"
+ mojave_sheriff_desc:0 ""
+ 
+ mojave_little_vegas:0 "A Little Vegas"
+ mojave_little_vegas_desc:0 ""
+ 
+ mojave_novac:0 "Renovating Novac"
+ mojave_novac_desc:0 ""
+ 
+ mojave_dinky:0 "Selling Souvenirs"
+ mojave_dinky_desc:0 ""
+ 
+ mojave_188:0 "Tax the 188"
+ mojave_188_desc:0 ""
+ 
+ mojave_boone_wife:0 "Sell Carla"
+ mojave_boone_wife_desc:0 ""
+ 
+ mojave_legion_support:0 "Render Unto Him"
+ mojave_legion_support_desc:0 ""
+ 
+ mojave_diplomacy:0 "Wasteland Diplomacy"
+ mojave_diplomacy_desc:0 ""
+ 
+ mojave_chapter_friends:0 "Treaty of Sloan"
+ mojave_chapter_friends_desc:0 ""
+ 
+ mojave_ask_sloan:0 "Ask for Sloan"
+ mojave_ask_sloan_desc:0 ""
+ 
+ mojave_black_mt:0 "Black Mountain Outpost"
+ mojave_black_mt_desc:0 ""
+ 
+ mojave_chapter_enemy:0 "Attack the Brotherhood"
+ mojave_chapter_enemy_desc:0 ""
+ 
+ mojave_looting_bunker:0 "Spoils of War"
+ mojave_looting_bunker_desc:0 ""
+ 
+ mojave_helios:0 "Fixing Helios 1"
+ mojave_helios_desc:0 ""
+ 
+ mojave_hopeville:0 "Contact Hopeville"
+ mojave_hopeville_desc:0 ""
+ 
+ mojave_hv_trade:0 "Hopeville Trade Deal"
+ mojave_hv_trade_desc:0 ""
+ 
+ mojave_hv_integrate:0 "Integrate Hopeville"
+ mojave_hv_integrate_desc:0 ""
+ 
+ mojave_ashton:0 "Contact Ashton"
+ mojave_ashton_desc:0 ""
+ 
+ mojave_ash_trade:0 "Supply Lines to Ashton"
+ mojave_ash_trade_desc:0 ""
+ 
+ mojave_ash_integrate:0 "Integrate Ashton"
+ mojave_ash_integrate_desc:0 ""
+ 
+ mojave_rangers:0 "Mojave Rangers"
+ mojave_rangers_desc:0 ""
+ 
+ mojave_patrols:0 "Patrolling the Mojave"
+ mojave_patrols_desc:0 ""
+ 
+ mojave_scorpions:0 "Dealing with the scorpions"
+ mojave_scorpions_desc:0 ""
+ 
+ mojave_nipton:0 "Back Into the Fold"
+ mojave_nipton_desc:0 ""
+ 
+ mojave_develop:0 "Mojave Evelopment Fund"
+ mojave_develop_desc:0 ""
+ 
+ mojave_quarries:0 "Renovate Quarry Junction"
+ mojave_quarries_desc:0 ""
+ 
+ mojave_mines:0 "Reopen the Mines"
+ mojave_mines_desc:0 ""
+ 
+ mojave_vault_19:0 "Clear out Vault 19"
+ mojave_vault_19_desc:0 ""
+ 
+ mojave_searchlight:0 "Renovating Searchlight"
+ mojave_searchlight_desc:0 ""
+ 
+ mojave_airport:0 "Mojave Air"
+ mojave_airport_desc:0 ""
+ 
+ mojave_waste:0 "Waste Not Want Not"
+ mojave_waste_desc:0 ""
+ 
+ mojave_courier:0 "Hopeville Courier"
+ mojave_courier_desc:0 ""
+ 
+ mojave_ulysses:0 "Ashton Courier"
+ mojave_ulysses_desc:0 ""
+ 
+ mojave_chapter_integration:0 "Invite the Mojave Chapter"
+ mojave_chapter_integration_desc:0 ""
+ 
+ mojave_cottonwood:0 "Renovating Cottonwood Cove"
+ mojave_cottonwood_desc:0 ""
+ 
+ mojave_dry_wells:0 "Dry Wells Migrants"
+ mojave_dry_wells_desc:0 ""
+ 
+ mojave_port_cottonwood:0 "Port Cottonwood"
+ mojave_port_cottonwood_desc:0 ""
+ 
+ mojave_bastion:0 "Mojave United"
+ mojave_bastion_desc:0 ""
+ 
+ mojave_goodsprings_accepted:0 "Goodsprings(Accepted)"
+ mojave_goodsprings_liked:0 "Goodsprings(Liked)"
+ mojave_goodsprings_idolized:0 "Goodsprings(Idolized)"
+ 
+ mojave_primm_accepted:0 "Primm(Accepted)"
+ mojave_primm_liked:0 "Primm(Liked)"
+ mojave_primm_idolized:0 "Primm(Idolized)"
+ 
+ mojave_novac_accepted:0 "Novac(Accepted)"
+ mojave_novac_liked:0 "Novac(Liked)"
+ mojave_novac_idolized:0 "Novac(Idolized)"
+ 
+ mojave_goodsprings_school:0 "Renovated the School"
+ 
+ mojave_uprising:0 "Kick the Raiders Out"
+ 
+ mojave:0 "The Mojave"
+ 
+ mojave_noonan:0 "Listen to No Bark Noonan"
+ mojave_noonan_brain:0 "Let Noonan kill the Molemen from the Underneath"

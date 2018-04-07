@@ -1,0 +1,214 @@
+mojave = {
+	mojave_nipton_treaty = {
+		icon = generic_political_discourse
+		
+		allowed = {
+			tag = MRA
+		}
+		
+		available = {
+			has_country_flag = mojaveuprising
+			has_war_with = NCR
+		}
+		
+		visible = {
+			has_war_with = NCR
+		}
+		cost = 50
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			white_peace = NCR
+			NCR = {
+				add_to_faction = MRA
+			}
+		}
+	}
+
+	mojave_uprising = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = MRA
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = mojaveuprising
+			}
+
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		visible = {
+			tag = MRA
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = mojaveuprising
+				set_political_party = { 
+					ideology = people 
+					popularity = 50.0 
+				}
+				set_political_party = { 
+					ideology = ruler
+					popularity = 50.0 
+				}
+				set_politics = {
+					ruling_party = people
+				}
+				kill_country_leader = yes
+				set_capital = 552
+				start_civil_war = {
+					ideology = ruler
+					size = 1
+					capital = 181
+					states_filter = {
+						owner = {
+							original_tag = MRA
+						}
+					}
+				}
+				create_country_leader  = {
+					name = "Mojave Coalition"
+					desc = "MJA_Leader_DESC"
+					picture = "gfx/leaders/mojave/Portrait_MRA_Leader.dds"
+					expire = "3000.1.1"
+					ideology = ideocracy
+    
+					traits = {
+					}
+				}
+				create_country_leader  = {
+					name = "Trudy"
+					desc = "MJA_Leader_DESC"
+					picture = "gfx/leaders/mojave/portrait_trudy.dds"
+					expire = "3000.1.1"
+					ideology = town_hall_democracy
+    
+					traits = {
+					}
+				}
+				create_country_leader  = {
+					name = "Jeannie May Crawford"
+					desc = "MJA_Leader_DESC"
+					picture = "gfx/leaders/mojave/portrait_crawford.dds"
+					expire = "3000.1.1"
+					ideology = indifferent_despotism
+    
+					traits = {
+					}
+				}
+				create_country_leader  = {
+					name = "Sheriff Mcquin"
+					desc = "MJA_Leader_DESC"
+					picture = "gfx/leaders/mojave/portrait_sheriff_mcquin.dds"
+					expire = "3000.1.1"
+					ideology = conspiratory_oligarchy
+				
+					traits = {
+					}
+				}
+				create_corps_commander = {
+					name = "Easy Pete"
+					id = 714
+					portrait_path = "gfx/leaders/mojave/easy_pete.dds"
+					skill = 2
+					traits = {
+						trait_engineer
+					}
+				}
+			
+				set_cosmetic_tag = MJA
+				load_focus_tree = mojave_nf
+				hidden_effect = {
+					load_oob = mojave_uprising
+				}
+				552 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}
+
+noonan = {
+	mojave_noonan_brain = {
+		icon = generic_political_discourse
+			
+		allowed = {
+			tag = MRA
+		}
+		available = {
+			has_country_flag = noonan
+			VLT = {
+				has_country_leader = {
+					id = 913
+					ruling_only = yes
+					name = "The Brain"
+				}
+			}
+		}
+		visible = {
+			has_country_flag = noonan
+			VLT = {
+				has_country_leader = {
+					id = 913
+					ruling_only = yes
+					name = "The Brain"
+				}
+			}
+		}
+		complete_effect = {
+			VLT = {
+				kill_country_leader = yes
+				add_to_variable = {
+					var = noonan 
+					value = 1
+				}
+			}
+		}	
+	}
+		
+	mojave_noonan = {
+		icon = generic_political_discourse
+			
+		allowed = {
+			tag = MRA
+		}
+			
+		available = {
+			has_completed_focus = mojave_188
+		}
+		visible = {
+			has_completed_focus = mojave_188
+		}
+		complete_effect = {
+			set_country_flag = noonan
+			set_variable = {
+				var = noonan
+				value = 1
+			}
+		}
+	}
+}

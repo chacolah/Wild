@@ -1,0 +1,669 @@
+focus_tree = {
+	id = mojave_nf
+	default = no
+	focus = {
+		id = mojave_raiders_came
+		icon = GFX_NCR_Mojave
+		cost = 1.00
+		x = 9
+		y = 0
+		available = {
+			MRA = {
+				has_civil_war = no
+			}
+		}
+		completion_reward = {
+			country_event = nf_mojave.1
+		}
+	}
+	focus = {
+		id = mojave_capital
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 1.00
+		
+		prerequisite = {
+			focus = mojave_raiders_came
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+			country_event = nf_mojave.2
+		}
+	}
+	focus = {
+		id = mojave_leader
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 1.00
+		prerequisite = {
+			focus = mojave_capital
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+			country_event = nf_mojave.3
+		}
+
+	}
+	focus = {
+		id = mojave_goodsprings
+		icon = GFX_bos_common_ground_with_savages
+		cost = 4.30
+		prerequisite = {
+			focus = mojave_leader
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+			552 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 5
+			}
+			add_resource = { 
+				type = metal 
+				amount = 4 
+				state = 552
+			}
+			
+		}
+	}
+	focus = {
+		id = mojave_goodsprings_source
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_goodsprings
+		}
+		x = 2
+		y = 5
+		completion_reward = {
+			add_resource = { 
+				type = water 
+				amount = 12 
+				state = 552
+			}
+		}
+	}
+	focus = {
+		id = mojave_restoring_school
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_goodsprings_source
+		}
+		x = 2
+		y = 6
+		completion_reward = {
+			add_ideas = mojave_goodsprings_schoolhouse
+			if = {
+				limit = {
+					has_idea = mojave_goodsprings_liked
+				}
+				swap_ideas = {
+					remove_idea = mojave_goodsprings_liked
+					add_idea = mojave_goodsprings_idolised
+				}
+			}
+			if = {
+				limit = {
+					has_idea = mojave_goodsprings_accepted
+				}
+				swap_ideas = {
+					remove_idea = mojave_goodsprings_accepted
+					add_idea = mojave_goodsprings_liked
+				}
+			}
+		}
+	}
+	focus = {
+		id = mojave_prospector
+		icon = GFX_generic_metal_focus
+		cost = 4.30
+		prerequisite = {
+			focus = mojave_restoring_school
+		}
+		available = {
+			OR = {
+				has_idea = mojave_goodsprings_liked
+				has_idea = mojave_goodsprings_idolised
+			}
+		}
+		x = 2
+		y = 7
+		completion_reward = {
+			add_resource = {
+				type = metal
+				amount = 4
+				state = 552
+			}
+			add_resource = {
+				type = electricity
+				amount = 2
+				state = 552
+			}
+			add_resource = {
+				type = electronics
+				amount = 2
+				state = 552
+			}
+		}
+	}
+	focus = {
+		id = mojave_ncr
+		icon = GFX_goal_poland_goal
+		cost = 4.30
+		prerequisite = {
+			focus = mojave_prospector
+		}
+		x = 2
+		y = 8
+		completion_reward = {
+			NCR = {
+				add_to_faction = MRA
+				add_ideas = mojave_ncr_support
+			}
+		}
+	}
+	focus = {
+		id = mojave_primm
+		icon = GFX_NCN_.45_Auto_pistol
+		cost = 4.30
+		prerequisite = {
+			focus = mojave_leader
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = mojave_express
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_primm
+		}
+		x = 5
+		y = 5
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = mojave_primm_casino
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_express
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = mojave_sheriff
+		icon = GFX_generic_ideological_fury_focus
+		cost = 4.30
+		prerequisite = {
+			focus = mojave_primm_casino
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = mojave_little_vegas
+		icon = GFX_VEG_Economic_Miracle
+		cost = 4.30
+		prerequisite = {
+			focus = mojave_sheriff
+		}
+		x = 5
+		y = 8
+
+	}
+	
+	focus = {
+		id = mojave_novac
+		icon = GFX_VEG_Enlist_the_Muggers
+		cost = 4.30
+		prerequisite = {
+			focus = mojave_leader
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = mojave_dinky
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_novac
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = mojave_188
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_dinky
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = mojave_boone_wife
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 4.30
+		prerequisite = {
+			focus = mojave_188
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = mojave_legion_support
+		icon = GFX_legion_diplomatic
+		cost = 4.30
+		prerequisite = {
+			focus = mojave_boone_wife
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = mojave_diplomacy
+		icon = GFX_goal_generic_major_alliance
+		cost = 4.30
+		prerequisite = {
+			focus = mojave_leader
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = mojave_chapter_friends
+		icon = GFX_bos_the_mojave_signal
+		cost = 3.40
+		prerequisite = {
+			focus = mojave_diplomacy
+		}
+		mutually_exclusive = {
+			focus = mojave_chapter_enemy
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = mojave_ask_sloan
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = mojave_chapter_friends
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = mojave_black_mt
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_ask_sloan
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = mojave_chapter_enemy
+		icon = GFX_VEG_Broken_Steel
+		cost = 3.40
+		prerequisite = {
+			focus = mojave_diplomacy
+		}
+		mutually_exclusive = {
+			focus = mojave_chapter_friends
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = mojave_looting_bunker
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = mojave_chapter_enemy
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = mojave_helios
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_looting_bunker
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = mojave_hopeville
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_diplomacy
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = mojave_hv_trade
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_hopeville
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = mojave_hv_integrate
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_hv_trade
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = mojave_ashton
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_diplomacy
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = mojave_ash_trade
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_ashton
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = mojave_ash_integrate
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_ash_trade
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = mojave_rangers
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_diplomacy
+		}
+		mutually_exclusive = {
+			focus = mojave_scorpions
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = mojave_patrols
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_rangers
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = mojave_scorpions
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_diplomacy
+		}
+		mutually_exclusive = {
+			focus = mojave_rangers
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = mojave_nipton
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_scorpions
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = mojave_develop
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_leader
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = mojave_quarries
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_develop
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = mojave_mines
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_quarries
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = mojave_vault_19
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_mines
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = mojave_searchlight
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 25
+		y = 5
+		prerequisite = {
+			focus = mojave_develop
+		}
+		completion_reward = {
+		
+		}
+
+	}
+	focus = {
+		id = mojave_airport
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_searchlight
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = mojave_waste
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_airport
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = mojave_courier
+		icon = GFX_VEG_General_Victor
+		cost = 4.30
+		prerequisite = {
+			focus = mojave_hv_integrate
+		}
+		mutually_exclusive = {
+			focus = mojave_ulysses
+		}
+		x = 15
+		y = 8
+
+	}
+	
+	
+	
+	focus = {
+		id = mojave_ulysses
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_ash_integrate
+		}
+		mutually_exclusive = {
+			focus = mojave_courier
+		}
+		x = 17
+		y = 8
+
+	}
+	
+	
+	focus = {
+		id = mojave_chapter_integration
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_black_mt
+			focus = mojave_helios
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = mojave_cottonwood
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_develop
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = mojave_dry_wells
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_port_cottonwood
+		}
+		available = {
+			TWI = {
+				exists = no
+			}
+		}
+		x = 27
+		y = 7
+
+	}
+	focus = {
+		id = mojave_port_cottonwood
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_cottonwood
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = mojave_bastion
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mojave_vault_19
+		}
+		prerequisite = {
+			focus = mojave_waste
+		}
+		prerequisite = {
+			focus = mojave_dry_wells
+		}
+		x = 25
+		y = 8
+
+	}
+}
