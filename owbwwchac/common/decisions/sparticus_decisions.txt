@@ -1,0 +1,169 @@
+bread_and_circuses = {
+
+	bnc_circus = {
+		icon = generic_political_discourse
+		
+		allowed = {
+			tag = CES
+		}
+		
+		available = {
+			NOT = { 
+				has_country_flag = circuses
+			}
+		}
+		
+		visible = {
+			tag = CES
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			set_variable = {
+				sparticus = 0
+			}
+			set_country_flag = circuses
+		}
+	}
+
+	bnc_hairs = {
+		icon = generic_political_discourse
+		
+		allowed = {
+			tag = CES
+		}
+		
+		available = {
+			TWI = {
+				exists = no
+			}
+			owns_state = 553
+		}
+		
+		visible = {
+			has_country_tag = circuses
+			TWI = {
+				exists = no
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 20
+		
+		complete_effect = {
+			add_to_variable = {
+				var = sparticus
+				value = 1
+				tooltip = bnc_grows
+			}
+			set_country_flag = bnc_hairs
+		}
+	}
+	
+	bnc_dogs = {
+		icon = generic_political_discourse
+		
+		allowed = {
+			tag = CES
+		}
+		
+		available = {
+			HAN = {
+				exists = no
+			}
+			owns_state = 525
+		}
+		
+		visible = {
+			has_country_tag = circuses
+			HAN = {
+				exists = no
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 20
+		
+		complete_effect = {
+			add_to_variable = {
+				var = sparticus
+				value = 1
+				tooltip = bnc_grows
+			}
+			set_country_flag = bnc_dogs
+		}
+	}
+	
+	bnc_fight = {
+		icon = generic_political_discourse
+		
+		allowed = {
+			tag = CES
+		}
+		
+		available = {
+			check_variable = {
+				sparticus > 1
+			}
+			NOT = {
+				has_idea = bnc_bread_and_circuses
+			}
+			has_country_flag  circuses
+		}
+		
+		visible = {
+			has_country_tag = circuses
+		}
+		
+		fire_only_once = no
+		
+		cost = 20
+		
+		complete_effect = {
+			add_timed_idea = {
+				idea = bnc_bread_and_circuses
+				days = 80
+			}
+			subtract_from_variable = {
+				var =  sparticus
+				value = 1
+			}
+		}
+	}
+	
+	bnc_buy_modoc = {
+		icon = generic_political_discourse
+		
+		allowed = {
+			tag = CES
+		}
+		
+		available = {
+			NEW = {
+				has_idea = modocslaves
+			}
+		}
+		
+		visible = {
+			has_country_tag = circuses
+			NEW = {
+				has_idea = modocslaves
+			}
+		}
+		
+		fire_only_once = yes
+		
+		cost = 20
+		
+		complete_effect = {
+			country_event = nf_sparticus.1
+			set_country_flag = bnc_modoc
+		}
+	}
+	
+}

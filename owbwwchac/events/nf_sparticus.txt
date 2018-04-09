@@ -1,0 +1,47 @@
+add_namespace = nf_sparticus
+
+country_event = {
+	id = nf_sparticus.1
+	title = nf_sparticus.1.t
+	desc = nf_sparticus.1.d
+	
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_sparticus.1.a
+		add_to_variable = {
+			var = sparticus
+			value 1
+		}
+		add_timed_idea = { 
+			idea = bnc_modoc_1
+			days = 100
+		}
+        
+	}
+	
+	option = {
+		name = nf_sparticus.1.b
+		add_to_variable = {
+			var = sparticus
+			value 2
+		}
+		add_timed_idea = { 
+			idea = bnc_modoc_2
+			days = 100
+		}
+		
+	}
+	option = {
+		name = nf_sparticus.1.c
+		add_to_variable = {
+			var = sparticus
+			value 3
+		}
+		add_timed_idea = { 
+			idea = bnc_modoc_3
+			days = 100
+		}
+		
+	}
+}

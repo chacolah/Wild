@@ -1,0 +1,30 @@
+add_namespace = nf_wildwasteland
+
+country_event = {
+	id = nf_wildwasteland.1
+	title = nf_wildwasteland.t 
+	desc = nf_wildwasteland.d 
+	
+	is_triggered_only = no
+	
+	option = {
+		name = nf_wildwasteland.1.a 
+		
+	}
+	
+	option = {
+		name = nf_wildwasteland.1.b 
+		set_global_flag = wild_wasteland_on
+		set_country_flag = ww_game_host
+	}
+	
+	option = {
+		name = nf_wildwasteland.1.c 
+		set_global_flag = wild_wasteland_overdrive
+		set_country_flag = ww_game_host
+	}
+	
+}
+
+country_event = {
+	id = nf_wildwasteland.2
