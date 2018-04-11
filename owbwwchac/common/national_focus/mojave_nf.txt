@@ -182,7 +182,25 @@ focus_tree = {
 		x = 5
 		y = 4
 		completion_reward = {
-			
+			add_resource = {
+				type = electricity
+				amount = 3
+				state = 419
+			}
+			add_resource = {
+				type = electronics
+				amount = 2
+				state = 419
+			}
+			if = {
+				limit = {
+					has_idea = mojave_primm_accepted
+				}
+				swap_ideas = {
+					remove_idea = mojave_primm_accepted
+					add_idea = mojave_primm_liked
+				}
+			}
 		}
 	}
 	focus = {
@@ -195,7 +213,8 @@ focus_tree = {
 		x = 5
 		y = 5
 		completion_reward = {
-			
+			set_country_flag = mojave_express 
+			add_ideas = mojave_express_contracts
 		}
 	}
 	focus = {
@@ -207,7 +226,13 @@ focus_tree = {
 		}
 		x = 5
 		y = 6
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mojave_express_contracts
+				add_idea = mojave_primm_contracts
+			}
+			
+		}
 	}
 	focus = {
 		id = mojave_sheriff
@@ -229,7 +254,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 8
-
+		completion_reward = {
+			country_event = nf_mojave.10
+		}
 	}
 	
 	focus = {

@@ -15,6 +15,10 @@ bread_and_circuses = {
 		
 		visible = {
 			tag = CES
+			OR = {
+				has_global_flag = wild_wasteland_on
+				has_global_flag = wild_wasteland_overdrive
+			}
 		}
 		
 		fire_only_once = yes
