@@ -284,5 +284,34 @@ country_event = {
 		
 	}
 }
+country_event = {
+	id = nf_mojave.11
+	title = nf_mojave.11.t 
+	desc = nf_mojave.11.d 
+	trigger - {
+		MRA = {
+			limit = {
+				has_country_tag = mojave_uprising
+				has_civil_war = no 
+				has_cosmetic_tag = MJA
+			}
+		}
+	}
+	immediate = {
+		MJA = {
+			annex_country = MRA
+			switch_tag_from = MRA
+		}
+		every_unit_leader = { 
+			set_nationality = MJA
+		}
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = nf_mojave.11.a
+	}
+}
+			
 
 	

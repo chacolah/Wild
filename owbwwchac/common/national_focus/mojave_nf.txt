@@ -1,5 +1,12 @@
 focus_tree = {
 	id = mojave_nf
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MJA
+		}
+	}
 	default = no
 	focus = {
 		id = mojave_raiders_came
