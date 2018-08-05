@@ -1,1 +1,2 @@
 MJA = "countries/MJA - Mojave Settlers.txt"
+WWA = "countries/WWA - Ashlanders"

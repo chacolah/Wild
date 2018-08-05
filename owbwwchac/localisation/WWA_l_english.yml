@@ -1,0 +1,58 @@
+﻿l_english:
+ # State and people locs
+ WWA_elites:0 "Land of Ash"
+ WWA_elites_DEF:0 "The Ashlands"
+ WWA_elites_ADJ:0 "Ashlander"
+ 
+ WWA_people:0 "Ashland Tribes"
+ WWA_people_DEF:0 "The Ashlands"
+ WWA_people_ADJ:0 "Ashlander"
+ 
+ WWA_ruler:0 "Ashland Bandits"
+ WWA_ruler_DEF:0 "The Ashlands"
+ WWA_ruler_ADJ:0 "Ashlander"
+ 
+ WWA_intellectuals:0 "Land of Ash"
+ WWA_intellectuals_DEF:0 "The Ashlands"
+ WWA_intellectuals_ADJ:0 "Ashlander"
+ 
+ walks_with_ash_DESC:0 "Once a young warrior from a small tribe in White Legs territory, Walks-With-Ash gained his name, and his place as chieftain of his tribe, after ambushing a renegade Brotherhood patrol, disarming a young initiate of his Laser Rifle, and due to his incredible luck disintegrating the entire patrol. He now leads a mixed group of outcasts, tribal warriors, and raiders."
+ 
+ STATE_ASHLANDS:0 "Ashlands"
+ #Traits
+ 
+ lck_10:0 "LCK 10"
+ 
+ #focuses
+ WWA_the_ambush:0 "The Ambush"
+ WWA_the_ambush_desc:0 "Our legends tell of metal beast men, wielding light spitting weapons, terrorizing our hunting parties. A young warrior, who had yet to pick his name, vowed revenge. He concocted a plan to ambush the monsters."
+
+ WWA_the_attack:0 "The Attack"
+ WWA_the_attack_desc:0 "From the survivor they learned the location of a nest of these beasts, and arming themselves with the Sunspitters they moved to attack."
+ 
+ WWA_the_ceremony:0 "The Ceremony"
+ WWA_the_ceremony_desc:0 "With the beast men defeated, the young warrior took his name, Walks-With-Ash, and became out leader. To commemorate this, we held a great ceremony."
+ 
+ WWA_the_outcast:0 "The Outcast"
+ WWA_the_outcast_desc:0 "Our legend grew, and with it grew our tribe. One day, a massive robed figure approached the village, seeking asylum."
+ 
+ 
+ #events
+ nf_WWA.1.t:0 "The Ambush" 
+ nf_WWA.1.d:0 "The glow of their weapons and the sheen of their metal skin were barely visible through the sandstorm. The beasts were few in number, lumbering through the flat and arid terrain. A smaller beast, lacking the strength of its packmates, stumbled behind, losing his footing on the harsh earth beneath him. The young warrior waited until they passed, snuck behind this weakling, and stole the Sunspitter from his hands. He quickly fired it at the four large ones, each one disintegrating to ash in his wake. Turning on the weakling, he quickly realised that it was a man. Interrogating the young beast-man, he found that this was only a smaller detachment of a larger force located not far from the tribe's main encampment. According to him, they were renegades, criminals to the brotherhood that had banished them, and that he was exiled for something else, but threw his lot in with them out of survival instinct. All that was left to do here was to decide the fate of the surviving warrior." 
+ nf_WWA.1.a:0 "Take him prisoner." 
+ nf_WWA.1.b:0 "Let him run." 
+ nf_WWA.1.c:0 "Kill him." 
+ 
+ nf_WWA.2.t:0 "The Attack" 
+ nf_WWA.2.d:0 "After having learned the location of the manbeast nest, a tangle of rock and metal set in the side of the mountain. " 
+ nf_WWA.2.a:0 "" 
+ 
+ nf_WWA.3.t:0 "The Ceremony" 
+ nf_WWA.3.d:0 "" 
+ nf_WWA.3.a:0 "" 
+ 
+ nf_WWA.4.t:0 "The Outcast" 
+ nf_WWA.4.d:0 "" 
+ nf_WWA.4.a:0 "" 
+ 

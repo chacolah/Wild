@@ -1,0 +1,21 @@
+leader_traits = {
+	
+	lck_10 = {
+		random = no
+		decryption_factor = 0.1
+		planning_speed = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

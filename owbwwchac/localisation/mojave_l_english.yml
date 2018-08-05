@@ -1,4 +1,5 @@
 ﻿l_english:
+#events
  nf_mojave.1.t:0 "What to do with the Raiders."
  nf_mojave.1.d:0 "We've won against the raiders, and we have whats left of them and their ilk at our mercy. What should we do?"
  nf_mojave.1.a:0 "Execute Them."
@@ -17,7 +18,24 @@
  nf_mojave.3.b:0 "Sheriff Mcbain, from Primm."
  nf_mojave.3.c:0 "Jeannie May Crawford, From Novac."
  
+ #country
+ MJA_elites:0 ""
+ MJA_elites_DEF:0 ""
+ MJA_elites_ADJ:0 ""
  
+ MJA_intellectials:0 ""
+ MJA_intellectials_DEF:0 ""
+ MJA_intellectials_ADJ:0 ""
+ 
+ MJA_people:0""
+ MJA_people_DEF:0""
+ MJA_people_ADJ:0""
+ 
+ MJA_ruler:0 ""
+ MJA_ruler_DEF:0 ""
+ MJA_ruler_ADJ:0 ""
+ 
+ #focus
  mojave_raiders_came:0 "Decide Raiders' fate"
  mojave_raiders_came_desc:0 ""
  

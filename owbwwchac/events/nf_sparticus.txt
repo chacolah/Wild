@@ -1,4 +1,4 @@
-add_namespace = nf_sparticus
+﻿add_namespace = nf_sparticus
 
 country_event = {
 	id = nf_sparticus.1

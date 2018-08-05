@@ -124,6 +124,17 @@ ideas = {
 				
 			}
 		}
+		mojave_goodsprings_schoolhouse = {
+			picture = {
+			
+			}
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+			
+			}
+		}
 		
 	}
 	

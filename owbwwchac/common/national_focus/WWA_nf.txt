@@ -1,0 +1,65 @@
+focus_tree = {
+	id = WWA_nf
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WWA
+		}
+	}
+	default = no
+	focus = {
+		id = WWA_the_ambush
+		icon = GFX_NCR_Mojave
+		cost = 1.00
+		x = 9
+		y = 0
+		available = {
+		}
+		completion_reward = {
+			country_event = nf_WWA.1
+		}
+	}
+	focus = {
+		id = WWA_the_attack
+		icon = GFX_NCR_Mojave
+		cost = 1.00
+		prerequisite = {
+			focus = WWA_the_ambush
+		}
+		x = 9
+		y = 1
+		completion_reward = {
+			country_event = nf_WWA.2
+		}
+	}
+	focus = {
+		id = WWA_the_ceremony
+		icon = GFX_NCR_Mojave
+		cost = 1.00
+		prerequisite = {
+			focus = WWA_the_attack
+		}
+		x = 9
+		y = 2
+		available = {
+		
+		}
+		completion_reward = {
+			country_event = nf_WWA.3
+		}
+	}
+	focus = {
+		id = WWA_the_outcast
+		icon = GFX_NCR_Mojave
+		cost = 1.00
+		prerequisite = {
+			focus = WWA_the_ceremony
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			country_event = nf_WWA.4
+		}
+	}
+}

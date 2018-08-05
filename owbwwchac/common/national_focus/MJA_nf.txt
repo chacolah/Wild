@@ -20,7 +20,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			country_event = nf_mojave.1
+			country_event = nf_MJA.1
 		}
 	}
 	focus = {
@@ -34,7 +34,7 @@ focus_tree = {
 		x = 9
 		y = 1
 		completion_reward = {
-			country_event = nf_mojave.2
+			country_event = nf_MJA.2
 		}
 	}
 	focus = {
@@ -47,7 +47,7 @@ focus_tree = {
 		x = 9
 		y = 2
 		completion_reward = {
-			country_event = nf_mojave.3
+			country_event = nf_MJA.3
 		}
 
 	}
@@ -262,7 +262,7 @@ focus_tree = {
 		x = 5
 		y = 8
 		completion_reward = {
-			country_event = nf_mojave.10
+			country_event = nf_MJA.10
 		}
 	}
 	

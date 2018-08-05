@@ -48,7 +48,7 @@ bread_and_circuses = {
 		}
 		
 		visible = {
-			has_country_tag = circuses
+			has_country_flag = circuses
 			TWI = {
 				exists = no
 			}
@@ -83,7 +83,7 @@ bread_and_circuses = {
 		}
 		
 		visible = {
-			has_country_tag = circuses
+			has_country_flag = circuses
 			HAN = {
 				exists = no
 			}
@@ -117,11 +117,11 @@ bread_and_circuses = {
 			NOT = {
 				has_idea = bnc_bread_and_circuses
 			}
-			has_country_flag  circuses
+			has_country_flag =  circuses
 		}
 		
 		visible = {
-			has_country_tag = circuses
+			has_country_flag = circuses
 		}
 		
 		fire_only_once = no
@@ -154,7 +154,7 @@ bread_and_circuses = {
 		}
 		
 		visible = {
-			has_country_tag = circuses
+			has_country_flag = circuses
 			NEW = {
 				has_idea = modocslaves
 			}

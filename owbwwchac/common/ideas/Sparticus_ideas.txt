@@ -1,0 +1,38 @@
+ideas = {
+	country = {
+		bnc_modoc_1 = {
+			picture = mojave
+			allowed = {
+			
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		bnc_modoc_2 = {
+			picture = mojave
+			allowed = {
+			
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		bnc_modoc_3 = {
+			picture = mojave
+			allowed = {
+			
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		
+		
+		
+	}
+	
+}
